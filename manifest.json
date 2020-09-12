@@ -1,0 +1,11 @@
+{"name":"Weather App",
+"short_name":"Weather",
+"images":[{
+    "src":"images\newyork-993601_1920.jpg",
+    "sizes":"1920×1280",
+    "type":"jpg"
+}],
+"start_url":"/index.html",
+"display":"standlone",
+"background_colour":"#3E4EB8",
+"theme_color":"#2F3BA2"}
