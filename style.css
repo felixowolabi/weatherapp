@@ -1,0 +1,29 @@
+body
+{
+    background-image:url("./images/newyork-993601_1920.jpg");
+    background-size: 100%;
+    min-height: 100%;
+    width: 100%;
+    font-family: 'Anton', sans-serif;
+
+}
+.header
+{
+   text-align: center; 
+margin-bottom: 100px;
+}
+
+.data 
+{
+ margin-left:20vw;
+
+}
+.box
+{
+border: 3px solid #872642 ;
+margin-right: 50vw;
+padding: 10px;
+background-color:beige;
+}
+
+
