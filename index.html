@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Today's weather</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+</head>
+<body>
+    <div class="header">
+    <h1>Newyork Weather</h1></div>
+<div class="data">
+    <h2 class ="box" id ="location"></h2>
+    <h2 class ="box" id ="temperature"></h2>
+    <h2 class ="box"id ="wind"></h2>
+    <h2 class ="box" id ="sky"></h2>
+</div>
+<!-- These are a javascript -->
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+    <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js')
+
+.then(registration => {
+    console.log('service worker is registered',registration);
+})
+.catch(err => {
+ console.error ('Registration failed', err);
+})
+})
+}
+        
+    </script>
+</body>
+</html>
